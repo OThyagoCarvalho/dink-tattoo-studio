@@ -49,10 +49,11 @@ export const HeroText = styled.div`
     align-items: center;
     h1 {
         margin: 0px;
-        font-size: 4rem;
+        font-size: 5rem;
         line-height: 90%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         letter-spacing: 1px;
+        text-align: center;
         span {
             color: #c00a00;
         }
@@ -60,5 +61,6 @@ export const HeroText = styled.div`
 
     p {
         margin: 0px;
+        text-align: center;
     }
 `;
