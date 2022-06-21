@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from '../../images/pexels-brett-sayles-2126124.jpg';
+import bg from '../../images/heroBg.jpg';
 
 export const Container = styled.section`
     height: 100vh;

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Container,
-    SubContainer,
     RowSubContainer,
     ColSubContainer
 } from './style';
