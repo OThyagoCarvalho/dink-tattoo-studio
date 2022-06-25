@@ -1,23 +1,29 @@
 import React from 'react';
-import { CardContainer, CardProfilePic, CardBody, CardTitle, TagsContainer } from './style';
+import {
+    CardContainer,
+    CardProfilePic,
+    CardBody,
+    CardTitle,
+    TagsContainer
+} from './style';
 
-export default function Card() {
+export default function Card(props) {
     return (
-        <CardContainer>
-            <CardProfilePic></CardProfilePic>
+        <CardContainer key={props.name}>
+            <CardProfilePic
+                style={{ backgroundImage:`url(${props.avatarUrl})` }}
+            ></CardProfilePic>
             <CardTitle>
-                <h3> Dhyego </h3>
+                <h3> {props.name} </h3>
             </CardTitle>
             <CardBody>
-                <p>
-                    Nascido no subúrbio carioca, dhyego descobriu na
-                    tatuagem a sua verdadeira paixão. Após isso, largou a
-                    faculdade e decidiu seguir seu sonho, dedicando-se
-                    exclusivamente à tatuagem desde então.
-                </p>
-                <TagsContainer>adsfadf</TagsContainer>
-                <TagsContainer>adsfadf</TagsContainer>
-                <TagsContainer>adsfadf</TagsContainer>              
+                <p>{props.description}</p>
+                <div>
+                {props.tags.map(tag => (
+                    <TagsContainer>{tag}</TagsContainer>
+                ))}
+                </div>
+                
             </CardBody>
         </CardContainer>
     );
