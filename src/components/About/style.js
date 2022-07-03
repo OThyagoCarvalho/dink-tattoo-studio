@@ -10,6 +10,8 @@ export const Container = styled.div`
     h2 {
         font-size: 3.5rem;
         font-weight: 700;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 
     div {

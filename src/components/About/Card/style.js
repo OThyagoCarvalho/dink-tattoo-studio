@@ -30,7 +30,11 @@ export const CardTitle = styled.div`
     justify-content: center;
     text-align: center;
     width: 100%;
-    font-weight: bold;
+    h3 {
+        margin: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
 `;
 
 export const CardBody = styled.div`
