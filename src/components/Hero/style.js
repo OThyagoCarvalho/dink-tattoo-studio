@@ -56,6 +56,8 @@ export const HeroText = styled.div`
         text-align: center;
         span {
             color: #c00a00;
+            font-size: 5rem;
+            font-weight: bold;
         }
     }
 
