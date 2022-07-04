@@ -9,7 +9,7 @@ export const Container = styled.footer`
     flex-wrap: wrap;
     padding: 25px 50px  0px 50px;
     box-sizing: border-box;
-    color: #aaa;
+    color: #aaa;    
 
     p {
       text-align: center;
