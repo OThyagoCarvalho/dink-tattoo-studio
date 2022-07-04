@@ -7,6 +7,7 @@ export const Container = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 350px;
     height: 600px;
     border-radius: 5px;
@@ -22,7 +23,8 @@ export const Container = styled.form`
     input {
         border: 1px solid #ccc;
         border-radius: 5px;
-        padding: 10px;
+        margin: 5px 15px 25px 15px;
+        padding: 15px;
         font-size: 1.25rem;
         ::placeholder {
             font-size: 1rem;
@@ -33,12 +35,14 @@ export const Container = styled.form`
 
     textarea {
         resize: none;
-        width: 100%;
+        padding: 15px;
+        margin: 0 0 0 15px;        
+        width: 90%;
         height: 100%;
         border: 1px solid #ccc;
         border-radius: 5px;
         ::placeholder {
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
     }
 
@@ -72,5 +76,6 @@ export const FieldsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 0 15px;
 `;

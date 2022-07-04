@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import {
     Container,
@@ -6,18 +7,11 @@ import {
 } from './style';
 
 export default function Footer() {
-    const styles = {
-        column: { display: 'flex', flexDirection: 'column' },
-        row: {
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between'
-        }
-    };
+    
     return (
         <Container>
             <RowSubContainer>
-                <h2> d'ink </h2>
+                <h3> d'ink </h3>
                 <a href="#top"> Voltar ao Topo ⬆</a>
             </RowSubContainer>
             <hr></hr>
@@ -26,13 +20,13 @@ export default function Footer() {
                     <h3>SOCIAL</h3>
                     <ul>
                         <li>
-                            <a href="#">instagram</a>
+                            <a href="https://www.instagram.com/dinktattoostudio/" target="_blank">instagram</a>
                         </li>
                         <li>
-                            <a href="#">whatsapp</a>
+                            <a href="https://wa.me/message/YO5TFNUHJZV3P1" target="_blank">whatsapp</a>
                         </li>
                         <li>
-                            <a href="tel:+5521999999999"> telefone </a>
+                            <a href="tel:+5521999999999" target="_blank"> telefone </a>
                         </li>
                     </ul>
                 </ColSubContainer>
@@ -54,10 +48,13 @@ export default function Footer() {
                     <h3>FAQ</h3>
                     <ul>
                         <li>
-                            <a href="#">Cuidados</a>
+                            <Link to="/cuidados">
+                                Cuidados
+                            </Link>
+                            
                         </li>
                         <li>
-                            <a href="#">link social</a>
+                            <a href="#" >link social</a>
                         </li>
                         <li>
                             <a href="#">link social</a>
@@ -67,7 +64,7 @@ export default function Footer() {
             </RowSubContainer>
             <hr></hr>
             <p> D'Ink Tattoo Studio ₢ - Todos os Direitos Reservados - 2022. CNPJ: 00.000.000/0000-00</p>
-            <p> Criado com ❤ por <a target="_blank" href='https://github.com/othyagocarvalho'> Thyago </a></p>
+            <p> Criado com ❤ por <a target="_blank" href='https://github.com/othyagocarvalho' rel="noreferrer"> Thyago </a></p>
         </Container>
     );
 }

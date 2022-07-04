@@ -10,7 +10,7 @@ export default function Hero() {
                     <p> You Cant Fake True Cool. 📍 ZO - Rio de Janeiro - RJ. </p>
                 </HeroText>
 
-                <button> O ESTÚDIO </button>
+                <a href="#about"> O ESTÚDIO </a>
             </Overlay>
         </Container>
     );

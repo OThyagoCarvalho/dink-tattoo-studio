@@ -17,26 +17,26 @@ export default function About() {
             avatarUrl:
                 dhyego,
 
-            tags: ['pontilhismo', 'blackwork']
+            tags: ['geek', 'blackwork']
         },
         cleyton: {
             name: '300TATTOO',
             description: `Teve contato com o desenho desde muito novo e há 4 anos conheceu o universo da tatuagem. Sempre se aprimorando e se desenvolvendo, atualmente se dedica ao realismo.`,
             avatarUrl:
                 cleyton,
-            tags: ['realismo', 'blackwork', 'preto e cinza']
+            tags: ['realismo', 'preto e cinza']
         },
         raquel: {
             name: 'Raquel',
             description: `Natural de Brasília, Raquel teve seu primeiro contato com a arte pintando telas e quadros, mas eventualmente descobriu sua paixão por tatuagem. Atualmente se especializa no estilo Old School`,
             avatarUrl:
                 raquel,
-            tags: ['oldschool', 'blackwork', 'new traditional']
+            tags: ['oldschool', 'neo traditional']
         }
     };
 
     return (
-        <Container>
+        <Container id="about">
             <h2> O NOSSO TIME </h2>
             <div>
                 <Card

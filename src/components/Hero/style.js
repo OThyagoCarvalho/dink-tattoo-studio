@@ -28,7 +28,10 @@ export const Overlay = styled.div`
     align-items: center;
     color: #fff;
 
-    button {
+    a { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         bottom: 15vh;
         height: 50px;
@@ -38,6 +41,9 @@ export const Overlay = styled.div`
         color: #fff;
         font-weight: bold;
         background: #c00a00;
+        text-decoration: none;
+        
+        text-align: center;
     }
 `;
 

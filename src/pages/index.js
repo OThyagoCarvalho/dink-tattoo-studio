@@ -1,21 +1,18 @@
 import * as React from 'react';
-import GlobalStyle from '../styles/globalStyles';
 import '@fontsource/dm-sans';
 import '@fontsource/dm-sans/700.css';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
 import About from '../components/About';
+import Galery from '../components/GalleryAndForm';
+import Layout from '../components/Layout';
 
 const IndexPage = () => {
     return (
-        <>
-            <GlobalStyle />
-            <Header id="top"/>
+        <Layout>            
             <Hero />
             <About />
-            <Footer />            
-        </>
+            <Galery />
+        </Layout>
     );
 };
 

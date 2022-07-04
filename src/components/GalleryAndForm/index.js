@@ -7,7 +7,7 @@ export default function Galery() {
   
     return (
         <Container>
-            <h2>O ESPAÇO E TRABALHOS</h2>
+            <h2>NOSSOS TRABALHOS</h2>
             <div>
                 <QuiltedImageList />
                 <Form />
