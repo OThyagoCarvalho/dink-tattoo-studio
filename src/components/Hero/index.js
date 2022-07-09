@@ -1,17 +1,28 @@
 import React from 'react';
-import { Container, HeroText, Overlay } from './style';
+import {
+    Container,
+    ImageContainer,
+    HeroText,
+    Overlay,
+    ContentContainer
+} from './style';
 
 export default function Hero() {
     return (
         <Container>
-            <Overlay>
-                <HeroText>
-                    <h1> <span> D'Ink </span> Tattoo Studio </h1>
-                    <p> You Cant Fake True Cool. 📍 ZO - Rio de Janeiro - RJ. </p>
-                </HeroText>
-
-                <a href="#about"> O ESTÚDIO </a>
-            </Overlay>
+            <ImageContainer>
+                <Overlay></Overlay>
+                <ContentContainer>
+                    <div>
+                        <h1>
+                            <span> D'Ink </span> Tattoo Studio
+                        </h1>
+                        <p> You Cant Fake True Cool.</p>
+                        <p>Abrimos de Segunda a Sexta - das 13:00 às 20:00</p>
+                        <a href="#"> quero um orçamento </a>
+                    </div>
+                </ContentContainer>
+            </ImageContainer>
         </Container>
     );
 }
