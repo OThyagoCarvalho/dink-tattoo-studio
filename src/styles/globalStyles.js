@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: #c00a00;
     --dark-bg: #111;
     --light-bg: #ddd;
+    --greyed-out: rgba(32, 33, 37, 0.6);
     --sm-padding: 16px;
     --md-padding: 32px;
     --lg-padding: 40px;
@@ -40,16 +41,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
   }
 
   h2 {
     font-size: 2.625rem;
-    font-weight: bold;    
-    margin: 25px 0;
-    display: flex;
-    justify-content: center;
-    
+    font-weight: 400;
+    line-height: .9;   
+      
   }
   
   h3 {
