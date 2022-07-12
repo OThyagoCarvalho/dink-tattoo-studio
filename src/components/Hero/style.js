@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import bg from '../../images/heroBg.webp';
 
 export const Container = styled.section`
-    height: calc(85vh - 75px);
+    height: calc(100vh - 75px);
     width: 100%;
     color: #fff;
     background-color: #eee;
