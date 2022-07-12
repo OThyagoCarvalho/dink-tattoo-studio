@@ -37,7 +37,7 @@ export default function About() {
 
     return (
         <Container id="about">
-            <h2> O NOSSO TIME </h2>
+            <h2> O TIME </h2>
             <div>
                 <Card
                     key={employees.dhyego.name}
