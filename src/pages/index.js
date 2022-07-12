@@ -3,15 +3,15 @@ import '@fontsource/dm-sans';
 import '@fontsource/dm-sans/700.css';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Galery from '../components/GalleryAndForm';
+import Galery from '../components/Gallery';
 import Layout from '../components/Layout';
 
 const IndexPage = () => {
     return (
         <Layout>            
             <Hero />
-            <About />
             <Galery />
+            <About />
         </Layout>
     );
 };
