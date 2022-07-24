@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-    Container,
-    ImageContainer,
-    Overlay,
-    ContentContainer
-} from './style';
+import { Container, ImageContainer, Overlay, ContentContainer } from './style';
 
 export default function Hero() {
     return (
@@ -18,7 +13,13 @@ export default function Hero() {
                         </h1>
                         <p> You Cant Fake True Cool.</p>
                         <p>Abrimos de Segunda a Sexta - das 13:00 às 20:00</p>
-                        <a href="#"> quero um orçamento </a>
+                        <a
+                            target="_blank"
+                            href="https://wa.me/message/YO5TFNUHJZV3P1"
+                        >
+                            {' '}
+                            quero um orçamento{' '}
+                        </a>
                     </div>
                 </ContentContainer>
             </ImageContainer>

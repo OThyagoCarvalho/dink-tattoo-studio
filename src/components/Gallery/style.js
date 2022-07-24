@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    min-height: 100vh;
+    min-height: 100%;
     background: var(--light-bg);
     color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
+
+    @media (max-width: 1024px) {
+        padding-top: 0;
+    }
 `;
 
 export const ContentContainer = styled.div`
@@ -81,6 +85,12 @@ export const CardContainer = styled.div`
 export const TextContainer = styled.div`
     padding-left: 5%;
 
+    > div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
     h2 {
         margin-bottom: 26px;
         font-size: 42px;
@@ -96,6 +106,7 @@ export const TextContainer = styled.div`
     a {
         font-size: 24px;
         width: fit-content;
+        min-height: 51px;
         height: fit-content;
         font-weight: bold;
         color: #fff;
@@ -107,11 +118,19 @@ export const TextContainer = styled.div`
         align-items: center;
         justify-content: center;
 
+        p {
+            color: #fff;
+        }
+
+        & + a {
+            margin-left: 10px;
+        }
+
         &:hover {
             background-color: #222;
         }
-        svg {
-            margin-right: 10px;
+        svg + p {
+            margin-left: 10px;
         }
     }
 
