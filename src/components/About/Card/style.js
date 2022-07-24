@@ -1,72 +1,83 @@
 import styled from 'styled-components';
 
-
 export const CardContainer = styled.div`
-    width: 300px;
-    min-height: 610px;
-    background: #111;
+    width: auto;
+    max-width: 33%;
+    min-width: 275px;
+    min-height: 350px;
+    background-color: var(--light-bg);
     position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    border: 1px solid #000;
     margin: 10px;
     justify-content: flex-start !important; // couldn't find a better way to force this setup because styling was being applied when making changes in developer tools but wasn't being applied in the final version
-    
 `;
 
-export const CardProfilePic = styled.div`
-    width: 100%;
-    height: 300px;
-    background-size: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  
-`;
-
-export const CardTitle = styled.div`
+export const CardHead = styled.div`
     background-color: #ddd;
-    display: block;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
     width: 100%;
+    padding: 10px;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+
+        p {
+            display: flex;
+            align-items: center;
+            color: var(--greyed-out);
+            font-weight: 400;
+        }
+    }
     h3 {
-        margin: 15px;
         font-size: 1.5rem;
         font-weight: bold;
+        margin: 0;
     }
 `;
 
 export const CardBody = styled.div`
-    padding: 10px;    
+    padding: 10px;
     display: flex;
     justify-content: center;
     height: 100%;
-    color: #ccc;
+    color: #000;
     text-align: justify;
     text-align-last: start;
-    
+
     > div {
         width: 100%;
-        position: absolute;
-        bottom: 15px;
+        margin-top: 20px;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
         overflow: hidden;
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
     }
 `;
 
-
 export const TagsContainer = styled.div`
-    background-color: #c00a00;
-    font-size: 0.8rem;   
-    color: #fff;
+    background-color: transparent;
+    font-size: 0.8rem;
+    color: var(--greyed-out);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 5px;
-    padding: 1px 5px;
-    border-radius: 2.5px;     
+    margin: 0 8px 8px 0px;    
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--greyed-out);
 `;

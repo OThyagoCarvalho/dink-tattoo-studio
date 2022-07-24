@@ -5,11 +5,14 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background: #ccc;
-    min-height: 100vh;
+    min-height: 100%;
+    padding: 50px 0;
 
     h2 {
-        font-size: 3.5rem;
-        font-weight: 700;
+        font-size: 32px;
+        font-weight: 400;
+        width: 100%;
+        text-align: left;
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
     }

@@ -36,26 +36,25 @@ export default function About() {
     };
 
     return (
-        <Container id="about">
-            <h2> O TIME </h2>
+        <Container id="about">            
             <div>
                 <Card
                     key={employees.dhyego.name}
-                    name="DHYEGO"
+                    name="Dhyego"
                     description={employees.dhyego.description}
                     tags={employees.dhyego.tags}
                     avatarUrl={employees.dhyego.avatarUrl}
                 />
                  <Card
                     key={employees.cleyton.name}
-                    name="CLEYTON"
+                    name="Cleiton"
                     description={employees.cleyton.description}
                     tags={employees.cleyton.tags}
                     avatarUrl={employees.cleyton.avatarUrl}
                 />
                 <Card
                     key={employees.raquel.name}
-                    name="RAQUEL"
+                    name="Raquel"
                     description={employees.raquel.description}
                     tags={employees.raquel.tags}
                     avatarUrl={employees.raquel.avatarUrl}
