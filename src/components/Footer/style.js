@@ -7,63 +7,79 @@ export const Container = styled.footer`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 25px 50px  0px 50px;
+    padding: 25px 50px 0px 50px;
     box-sizing: border-box;
-    color: #aaa;    
+    color: #aaa;
 
     p {
-      text-align: center;
-      a {
-        color: #aaa;
-        text-decoration: none;
-      }
+        text-align: center;
+        a {
+            color: #aaa;
+            text-decoration: none;
+        }
     }
 
     hr {
-      border: 0;
-      border-top: 1px solid #aaa;
-      margin-top: 1.25rem;
-      width: 100%;      
+        border: 0;
+        border-top: 1px solid #aaa;
+        margin-top: 1.25rem;
+        width: 100%;
     }
 `;
 
 export const SubContainer = styled.div`
     color: #aaa;
     position: relative;
-    display: flex;    
-    
+    display: flex;
+
     div {
         color: #aaa;
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;
     }
     ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
-    h2, h3 {
-      margin: 0;
+    h2,
+    h3 {
+        margin: 0;
     }
-    a, a::after, a::before {
-      text-decoration: none;
-      color: #aaa;
+    a,
+    a::after,
+    a::before {
+        text-decoration: none;
+        color: #aaa;
     }
     a:hover {
-      color: #ccc;
+        color: #ccc;
     }
 `;
 
 export const RowSubContainer = styled(SubContainer)`
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 350px) {
+        justify-content: flex-start;
         
-
-`
+    }
+`;
 export const ColSubContainer = styled(SubContainer)`
-        flex-direction: column;
-        margin: 1rem;  
+    flex-direction: column;
+    margin: 1rem;
 
-`
+    @media (max-width: 350px) {
+        margin: 1rem 1rem 1rem 0;
+    }
+`;
+
+export const TitleRowSubContainer = styled(SubContainer)`
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+`;
