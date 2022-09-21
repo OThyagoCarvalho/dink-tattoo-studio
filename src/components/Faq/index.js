@@ -10,13 +10,15 @@ export default function Faq() {
     return (
         <SectionContainer>
             <MaxContentContainer>
-                <Accordion>
+                {/* there's a more elegant - and verbose - way to handle custom reusable components using the 'styled()' utility. Should be refactored eventualy. Doc ref.: https://mui.com/pt/material-ui/customization/how-to-customize/#2-reusable-component */}
+                <Accordion  sx={{backgroundColor: '#111', color:'#fff'}}>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon style={{color: '#fff'}} />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
+                        
                     >
-                        <Typography>Onde Estamos?</Typography>
+                        <Typography fontWeight={600}>Onde Estamos?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
@@ -24,30 +26,43 @@ export default function Faq() {
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion>
+                <Accordion sx={{backgroundColor: '#111', color:'#fff'}}>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon style={{color: '#fff'}} />}
                         aria-controls="panel2a-content"
                         id="panel2a-header"
                     >
-                        <Typography>Accordion 2</Typography>
+                        <Typography fontWeight={600}>Como funciona o orçamento?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            Após entrar em contato, solicitaremos que nos envie a foto da sua arte em boa resolução ou no caso de desejar uma arte original, solicitaremos algumas referências. Analisaremos e entraremos em contato com algumas sugestões e caso aprove a ideia do artista, passaremos o valor e cobraremos um pequeno sinal para início do desenvolvimento da arte.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion disabled>
+                <Accordion sx={{backgroundColor: '#111', color:'#fff'}}>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon style={{color: '#fff'}} />}
                         aria-controls="panel3a-content"
                         id="panel3a-header"
                     >
-                        <Typography>Disabled Accordion</Typography>
+                        <Typography fontWeight={600}>O que influencia o valor final?</Typography>
                     </AccordionSummary>
+                    <AccordionDetails>
+                        O orçamento leva em conta o tamanho da arte e o tempo estimado para finalizá-la. No caso de criações originais, o orçamento também leva em conta o tempo gasto no desenvolvimento da arte.
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion sx={{backgroundColor: '#111', color:'#fff'}}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon style={{color: '#fff'}} />}
+                        aria-controls="panel3a-content"
+                        id="panel3a-header"
+                    >
+                        <Typography fontWeight={600}>Quais são as formas de pagamento?</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        Aceitamos as principais formas de pagamento: Dinheiro, PIX, Débito, Crédito e parcelamos com ou sem juros a depender do valor final e do número de parcelas.
+                    </AccordionDetails>
                 </Accordion>
             </MaxContentContainer>
         </SectionContainer>
