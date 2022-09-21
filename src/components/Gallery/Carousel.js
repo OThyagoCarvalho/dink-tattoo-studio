@@ -1,34 +1,27 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 
+import pic1 from '../../images/gallery/pic1.jpg';
+import pic2 from '../../images/gallery/pic2.jpg';
+import pic3 from '../../images/gallery/pic3.jpg';
 
-
-import zeus from '../../images/gallery/zeus.webp';
-import pulp from '../../images/gallery/pulp.webp';
-import lp from '../../images/gallery/lp.webp';
-import casal from '../../images/gallery/casal.webp';
 
 export default function Example(props) {
     var items = [
         {
-            name: 'Por Dhyego',
-            description: 'Um momento em polaroid.',
-            image: casal
+            name: 'Por Diego',
+            description: 'Artes em Blackwork',
+            image: pic1
         },
         {
             name: 'Por Cleiton',
-            description: 'Zeus, O deus do Olimpo.', 
-            image: zeus
+            description: 'Realismo', 
+            image: pic2
         },
         {
-            name: 'Por Cleiton',
-            description: 'Chester, vocalista do Linkin Park.', 
-            image: lp
-        },
-        {
-            name: 'Por Cleiton',
-            description: 'Pulp Fiction.', 
-            image: pulp
+            name: 'Por Raquel',
+            description: 'Artes Neo Tradicional e Old school', 
+            image: pic3
         }
     ];
 
