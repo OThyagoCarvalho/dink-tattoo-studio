@@ -1,6 +1,6 @@
 import { Avatar } from '@mui/material';
 import React from 'react';
-import { CardContainer, CardBody, CardHead, TagsContainer } from './style';
+import { CardContainer, CardBody, CardHead, Tag, TagsContainer } from './style';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Card(props) {
@@ -23,11 +23,11 @@ export default function Card(props) {
                 <p>{props.description}</p>
                 <div>
                     <h4>ESTILOS</h4>
-                    <div>
+                    <TagsContainer>
                         {props.tags.map(tag => (
-                            <TagsContainer>{tag}</TagsContainer>
+                            <Tag>{tag}</Tag>
                         ))}
-                    </div>
+                    </TagsContainer>
                 </div>
             </CardBody>
         </CardContainer>

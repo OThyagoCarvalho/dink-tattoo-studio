@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const SectionContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: #ccc;
     min-height: 100%;
     padding: 50px 0;
@@ -17,10 +18,24 @@ export const Container = styled.div`
         margin-bottom: 2.5rem;
     }
 
-    div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+`;
+
+export const MaxContentContainer = styled.div`
+    width: 100%;
+    max-width: var(--max-content-px-width);
+    padding: 0 var(--lg-padding);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+        padding: var(--md-padding);
+    }
+
+    @media (max-width: 768px) {
+        padding: var(--sm-padding);
     }
 `;

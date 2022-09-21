@@ -2,16 +2,23 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     width: auto;
-    max-width: 33%;
     min-width: 275px;
     min-height: 350px;
     background-color: var(--light-bg);
     position: relative;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    margin: 10px;
+    /* margin: 10px; */
     justify-content: flex-start !important; // couldn't find a better way to force this setup because styling was being applied when making changes in developer tools but wasn't being applied in the final version
+
+    @media (min-width: 1200px) {
+        width: 30%;
+        min-width: 340px;
+        max-width: 560px;
+        margin-bottom: 0;
+    }
 `;
 
 export const CardHead = styled.div`
@@ -44,6 +51,7 @@ export const CardHead = styled.div`
 export const CardBody = styled.div`
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100%;
     color: #000;
@@ -65,18 +73,20 @@ export const CardBody = styled.div`
             font-weight: bold;
             margin-bottom: 10px;
         }
-
     }
 `;
-
 export const TagsContainer = styled.div`
+    display: flex;
+`;
+
+export const Tag = styled.div`
     background-color: transparent;
     font-size: 0.8rem;
     color: var(--greyed-out);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 8px 8px 0px;    
+    margin: 0 8px 8px 0px;
     padding: 10px;
     border-radius: 15px;
     border: 1px solid var(--greyed-out);
