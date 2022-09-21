@@ -5,13 +5,15 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Galery from '../components/Gallery';
 import Layout from '../components/Layout';
+import Faq from '../components/Faq';
 
 const IndexPage = () => {
     return (
-        <Layout>            
+        <Layout>
             <Hero />
             <Galery />
             <About />
+            <Faq />
         </Layout>
     );
 };
