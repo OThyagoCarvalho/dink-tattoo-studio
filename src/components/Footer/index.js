@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import {
     Container,
@@ -23,6 +22,7 @@ export default function Footer() {
                             <a
                                 href="https://www.instagram.com/dinktattoostudio/"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 instagram
                             </a>
@@ -31,13 +31,15 @@ export default function Footer() {
                             <a
                                 href="https://wa.me/message/YO5TFNUHJZV3P1"
                                 target="_blank"
+                                rel="noreferrer"
+
                             >
                                 whatsapp
                             </a>
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="/"
                             
                             >
                                 {' '}
@@ -50,13 +52,13 @@ export default function Footer() {
                     <h3>SOBRE NÓS</h3>
                     <ul>
                         <li>
-                            <a href="#">link</a>
+                            <a href="/">link</a>
                         </li>
                         <li>
-                            <a href="#">link</a>
+                            <a href="/">link</a>
                         </li>
                         <li>
-                            <a href="#">link</a>
+                            <a href="/">link</a>
                         </li>
                     </ul>
                 </ColSubContainer>
@@ -64,10 +66,10 @@ export default function Footer() {
                     <h3>FAQ</h3>
                     <ul>
                         <li>
-                            <Link to="/">Cuidados</Link>
+                            <a href="/">link</a>
                         </li>
                         <li>
-                            <a href="#">link</a>
+                            <a href="/">link</a>
                         </li>
                         <li>
                             <a href="#">link</a>
